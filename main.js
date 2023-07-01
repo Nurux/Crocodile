@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: false}));
 app.use(express.json());
 
 app.set('view engine', 'ejs');
-app.set('views', './assets/views');
+app.set('views', 'assets/views');
 
 app.get('/', (req, res) => {
     res.render('inicio');
