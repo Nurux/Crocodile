@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #197f4f;
+}
+
+
+/*--Menu--*/
+header {
+    background-color: #a0ecc8;
+    height: 3em;
+    top: 0;
+    position: sticky;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 10rem;
+    border-radius: 2rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-right: .2rem;
+}
+
+.icon i {
+    background-color: #17d66f;
+    color: black;
+    padding: 0.5rem;
+    margin: .2rem;
+    border-radius: 2rem;
+}
+
+.icon:hover i {
+    background-color: #197f4f;
+    color: white;
+}
+
+.menu_lateral {
+    background-color: #17d66f;
+    width: 4rem;
+    height: 2.5rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_lateral p {
+    margin-top: .75rem;
+}
+
+.menu_lateral form {
+    display: none;
+    margin-top: 0.5rem;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.178);
+    border-radius: .2rem;
+}
+
+.menu_lateral button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 5rem;
+    color: black;
+    font-size: 12px;
+    border-radius: .2rem;
+    background-color: #17d66f;
+}
+
+.menu_lateral:hover {
+    background-color: #197f4f;
+    color: white;
+}
+
+.menu_lateral:hover form {
+    display: block;
+}
+
+.menu_lateral:hover button{
+    color: white;
+}
+
+/*--Conteudo--*/
+section{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.post{
+    height: auto;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: azure;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+}
+
+.post .cabeca {
+    display: flex;
+    justify-content: space-around;
+    padding-top: .5rem;
+}
+
+.post h3{
+    width: 50vw;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.post p {
+    padding: .5rem;
+    padding-bottom: 0;
+}
+
+.cabeca p{
+    width: 5rem;
+}
+
+.cabeca h3, .cabeca p{
+    background-color: rgba(0, 0, 0, 0.204);
+    padding: 0 1rem 0 1rem;
+    border-radius: 0.2rem;
+}
+
+.post button {
+    width: 90%;
+    margin: .5rem auto;
+    border: none;
+    background-color: rgb(35, 201, 145);
+    color: white;
+    border-radius: .5rem;
+    height: 1.5rem;
+    transition: background 150ms ease-in;
+}
+
+.post button:hover{
+    background-color: rgb(21, 141, 101);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 750px){
+    .post {
+        width: 70vw;
+    }
+
+    .respp {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 1020px){
+    .post {
+        width: 60vw;
+    }
+}
+
+
+
+
+

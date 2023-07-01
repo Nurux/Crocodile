@@ -1,0 +1,15 @@
+<%- include('partials/head') %>
+
+<body>
+    <%- include('partials/navbar')%>
+    <div class="wellcome">
+        <h1>Bem vindo(a)!</h1>
+        <p>Bem-vindo ao Crocodile, um aplicativo onde você pode interagir fazendo e respondendo perguntas. Explore um ambiente divertido e conecte-se com pessoas curiosas. Aprenda, compartilhe conhecimentos e desfrute de uma comunidade acolhedora. Juntos, vamos embarcar em uma emocionante jornada de descoberta. Bem-vindo ao Crocodile!</p>
+        <form method="post" action="/red">
+            <button type="submit" name="option" value="1">Perguntar</button>
+            <button type="submit" name="option" value="0">Responder</button>
+        </form>
+    </div>
+</body>
+
+<%- include('partials/icons') %>

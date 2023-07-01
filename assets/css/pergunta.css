@@ -1,0 +1,52 @@
+.pergunta_atual {
+    margin: 2rem auto;
+    width: 90vw;
+    height: auto;
+    border-radius: .5rem;
+    background-color: white;
+    text-align: center;
+}
+
+.pergunta_atual h1 {
+    font-size: 18px;
+    background-color: #BFCBCB;
+    border-radius: .5rem;
+    margin: 0 auto;
+    width: 85vw;
+    padding: .2rem 0;
+}
+
+.pergunta_atual p {
+    text-align: center;
+    padding: 1rem;
+    font-size: 16px;
+}
+
+.resp form {
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.resp form h4 {
+    color: white
+}
+
+.respp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.599);
+    border-radius: .2rem;
+    margin: .5rem;
+    text-align: center;
+    height: 5rem;
+}
+
+#intet {
+    border-top: 1px solid rgba(0, 0, 0, 0.24);
+    color: white;
+    margin-left: .5rem;
+    padding-top: .2rem;
+}
+

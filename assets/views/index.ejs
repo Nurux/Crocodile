@@ -1,0 +1,23 @@
+<%- include('partials/head') %>
+
+<body>
+    <main>
+        <%- include ('partials/navbar.ejs') %>
+        <section>
+            <% if (cond) { %>
+                <h3>Ocorreu um error aqui!</h3>
+            <% } else { %>
+                <% perguntas.forEach(pergunta => { %>
+                    <div class="post">
+                        <div class="cabeca">
+                            <h3><%= pergunta.titulo%></h3>
+                        </div>
+                        <p><%= pergunta.descricao%></p>
+                        <a href="/pergunta/<%= pergunta.id %>"><button type="button">Responder</button></a>
+                    </div>
+                <% }) %>
+            <% } %>
+        </section>
+    </main>
+</body>
+<%- include('partials/icons') %>
