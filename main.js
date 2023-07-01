@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 app.set('views', './assets/views');
 
 app.get('/', (req, res) => {
-    res.render('inicio');
+    res.render('inicio.ejs');
 })
 
 app.get('/inicio', (req, res) => {
