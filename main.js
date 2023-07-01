@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const mysql = require('./database/conection_db').connection;
 
-app.use(express.static('./assets'));
+app.use(express.static('./'));
 app.use(express.urlencoded({ extended: false}));
 app.use(express.json());
 
